@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>question</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- first page start  -->
+    <div class="MyQuizApp">
+      <div class="img">
+        <img src="img/undraw_questions_re_1fy7.svg" alt="" />
+      </div>
+      <div class="text1">
+        <h3>Quiz App with Fixed Time</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, dolor
+          voluptatum saepe quis nesciunt totam
+        </p>
+        <h3>Quiz App with Fixed Time</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, dolor
+          voluptatum saepe quis nesciunt totam
+        </p>
+      </div>
+      <div class="Mybtn">
+        <button>Start Quiz</button>
+      </div>
+    </div>
+    <!-- first page end -->
+    <!-- second page start -->
+
+    <div class="Rulesbox hidden">
+      <div class="RulesTital">Some Rules of this Quiz</div>
+      <div class="RulesList">
+        <ol>
+          <li>
+            You Have only <b style="color: aqua">15 seconds</b> per each
+            question
+          </li>
+          <li>You Have only 15 seconds per each question</li>
+          <li>You Have only 15 seconds per each question</li>
+          <li>You Have only 15 seconds per each question</li>
+          <li>You Have only 15 seconds per each question</li>
+          <li>You Have only 15 seconds per each question</li>
+        </ol>
+      </div>
+      <div class="RulesButton">
+        <button class="ExitButton">Exit Quiz</button>
+        <button class="ContinueButton">Continue</button>
+      </div>
+    </div>
+    <!-- second page end -->
+    <!-- question start  -->
+    <div class="questions hidden">
+      <header class="questionHeader">
+        <div class="tital">Start Exam</div>
+        <div class="TimeCount">
+          <div class="Timeleft">Time left</div>
+          <div class="Seconds">15</div>
+        </div>
+        <div class="time_lines"></div>
+      </header>
+      <div class="section">
+        <div class="text">
+          <!-- <span>1. What Does HTML Stand For?</span> -->
+        </div>
+        <div class="Myoptions">
+          <div class="options"></div>
+        </div>
+      </div>
+      <footer>
+        <div class="total_que">1 of 5 question</div>
+        <button class="nextbtn hidden">next Qu</button>
+      </footer>
+    </div>
+    <!-- question end -->
+    <!-- Results show start -->
+    <div class="result_box hidden">
+      <div class="resultImg">
+        <img src="img/winner.svg" alt="imge" />
+      </div>
+      <div class="finished_text">You Have Finished This Exam</div>
+      <div class="scores_text">
+        <span
+          >Carry On👍 You Got
+          <b>0</b>
+          Out Of
+          <b>5</b></span
+        >
+      </div>
+      <div class="buttons">
+        <button class="restart">Replay</button>
+        <button class="quit">Quit Quiz</button>
+      </div>
+    </div>
+    <!-- Results show end -->
+
+    <script src="index.js"></script>
+    <script src="question.js"></script>
+  </body>
+</html>
